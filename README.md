@@ -86,13 +86,13 @@ from ophis.database import Repository
 class ThingDatabase(Repository):
     def __init__(self, table=None):
         super.__init__(self, table=table, type="Things", fields_to_keys={
-            'SK': 'thingName'
+            'thingName': 'SK'
         })
 ```
 
 With the above definition, the following operations can be performed:
 
-```
+``` python
 import boto3
 from ophis.database import QueryParams
 
