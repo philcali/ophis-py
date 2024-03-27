@@ -1,5 +1,9 @@
 # Ophis Pteretos
 
+[![CodeQL](https://github.com/philcali/ophis-py/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/philcali/ophis-py/actions/workflows/codeql-analysis.yml)
+[![Python package](https://github.com/philcali/ophis-py/actions/workflows/python-package.yml/badge.svg)](https://github.com/philcali/ophis-py/actions/workflows/python-package.yml)
+[![codecov](https://codecov.io/gh/philcali/ophis-py/graph/badge.svg?token=B9HXJVMLCN)](https://codecov.io/gh/philcali/ophis-py)
+
 This is common Python bindings for AWS based applications. The name
 "Ophis Pteretos" is Greek for flying serpent, since... this library
 is intended for the cloud. Supported in this library are helpers for
@@ -19,7 +23,7 @@ typical applications, you would put this in your module `__init__.py`:
 from ophis.router import Router
 
 
-api = Router
+api = Router()
 ```
 
 Now defining your route is as easy as:
